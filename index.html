@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +14,20 @@
             --light-color: #f5f5f5;
             --dark-color: #333333;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             background-color: var(--light-color);
             color: var(--dark-color);
             line-height: 1.6;
         }
-        
+
         header {
             background-color: var(--dark-color);
             color: white;
@@ -36,7 +37,7 @@
             z-index: 1000;
             top: 0;
         }
-        
+
         nav {
             display: flex;
             justify-content: space-between;
@@ -45,31 +46,31 @@
             margin: 0 auto;
             padding: 0 2rem;
         }
-        
+
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
         }
-        
+
         .nav-links {
             display: flex;
             list-style: none;
         }
-        
+
         .nav-links li {
             margin-left: 2rem;
         }
-        
+
         .nav-links a {
             color: white;
             text-decoration: none;
             transition: color 0.3s;
         }
-        
+
         .nav-links a:hover {
             color: var(--secondary-color);
         }
-        
+
         .hamburger {
             display: none;
             cursor: pointer;
@@ -78,20 +79,20 @@
             color: white;
             font-size: 1.5rem;
         }
-        
+
         section {
             padding: 5rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
-        
+
         h2 {
             text-align: center;
             margin-bottom: 3rem;
             color: var(--primary-color);
             font-size: 2.5rem;
         }
-        
+
         .hero {
             height: 100vh;
             display: flex;
@@ -106,23 +107,23 @@
             max-width: none;
             padding: 0;
         }
-        
+
         .hero-content {
             z-index: 10;
             padding: 2rem;
         }
-        
+
         .hero h1 {
             font-size: 4rem;
             margin-bottom: 1rem;
         }
-        
+
         .hero p {
             font-size: 1.5rem;
             max-width: 600px;
             margin: 0 auto;
         }
-        
+
         .slide {
             position: absolute;
             top: 0;
@@ -134,39 +135,39 @@
             background-size: cover;
             background-position: center;
         }
-        
+
         .slide.active {
             opacity: 1;
         }
-        
+
         .about {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
             align-items: center;
         }
-        
+
         .about-text {
             line-height: 1.8;
         }
-        
+
         .map-container {
             height: 400px;
             background-color: #e9e9e9;
             border-radius: 8px;
             overflow: hidden;
         }
-        
+
         .highlights {
             text-align: center;
         }
-        
+
         .highlights-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
         }
-        
+
         .highlight-card {
             background-color: white;
             border-radius: 8px;
@@ -174,11 +175,11 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
         }
-        
+
         .highlight-card:hover {
             transform: translateY(-10px);
         }
-        
+
         .highlight-img {
             height: 200px;
             background-color: #e9e9e9;
@@ -188,21 +189,21 @@
             font-size: 3rem;
             color: var(--primary-color);
         }
-        
+
         .highlight-info {
             padding: 1.5rem;
         }
-        
+
         .gallery {
             text-align: center;
         }
-        
+
         .gallery-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1rem;
         }
-        
+
         .gallery-item {
             height: 250px;
             background-color: #e9e9e9;
@@ -210,35 +211,35 @@
             overflow: hidden;
             position: relative;
         }
-        
+
         .gallery-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.3s;
         }
-        
+
         .gallery-item:hover img {
             transform: scale(1.1);
         }
-        
+
         .businesses {
             background-color: var(--light-color);
         }
-        
+
         .business-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-        
+
         .business-card {
             background-color: white;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        
+
         .business-img {
             height: 200px;
             background-color: #e9e9e9;
@@ -248,21 +249,21 @@
             font-size: 3rem;
             color: var(--primary-color);
         }
-        
+
         .business-info {
             padding: 1.5rem;
         }
-        
+
         .people {
             text-align: center;
         }
-        
+
         .people-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
         }
-        
+
         .person-card {
             background-color: white;
             border-radius: 8px;
@@ -270,7 +271,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-        
+
         .person-img {
             height: 200px;
             width: 200px;
@@ -283,23 +284,23 @@
             font-size: 5rem;
             color: var(--primary-color);
         }
-        
+
         .person-info {
             padding: 0 1.5rem 1.5rem;
         }
-        
+
         /* Facilities Section Styles */
         .facilities {
             background-color: var(--light-color);
             text-align: center;
         }
-        
+
         .facilities-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-        
+
         .facility-card {
             background-color: white;
             border-radius: 8px;
@@ -308,11 +309,11 @@
             height: 100%;
             transition: transform 0.3s;
         }
-        
+
         .facility-card:hover {
             transform: translateY(-10px);
         }
-        
+
         .facility-icon {
             display: flex;
             align-items: center;
@@ -322,28 +323,28 @@
             color: white;
             font-size: 3rem;
         }
-        
+
         .facility-info {
             padding: 1.5rem;
         }
-        
+
         .facility-info h3 {
             color: var(--primary-color);
             margin-bottom: 1rem;
         }
-        
+
         /* Contact Section Styles */
         .contact {
             text-align: center;
             background-color: white;
         }
-        
+
         .contact-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
         }
-        
+
         .contact-info {
             text-align: left;
             padding: 2rem;
@@ -351,22 +352,22 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        
+
         .contact-info h3 {
             color: var(--primary-color);
             margin-bottom: 1.5rem;
         }
-        
+
         .contact-details {
             margin-bottom: 2rem;
         }
-        
+
         .contact-detail {
             display: flex;
             align-items: center;
             margin-bottom: 1rem;
         }
-        
+
         .contact-icon {
             font-size: 1.5rem;
             color: var(--primary-color);
@@ -374,14 +375,14 @@
             width: 30px;
             text-align: center;
         }
-        
+
         .map {
             height: 400px;
             background-color: #e9e9e9;
             border-radius: 8px;
             overflow: hidden;
         }
-        
+
         .contact-form {
             background-color: var(--light-color);
             border-radius: 8px;
@@ -389,23 +390,23 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
         }
-        
+
         .contact-form h3 {
             color: var(--primary-color);
             margin-bottom: 1.5rem;
             text-align: center;
         }
-        
+
         .form-group {
             margin-bottom: 1.5rem;
         }
-        
+
         .form-label {
             display: block;
             margin-bottom: 0.5rem;
             font-weight: bold;
         }
-        
+
         .form-control {
             width: 100%;
             padding: 0.75rem;
@@ -413,12 +414,12 @@
             border-radius: 4px;
             transition: border-color 0.3s;
         }
-        
+
         .form-control:focus {
             border-color: var(--primary-color);
             outline: none;
         }
-        
+
         .btn {
             display: inline-block;
             background-color: var(--primary-color);
@@ -431,25 +432,25 @@
             font-weight: bold;
             transition: background-color 0.3s;
         }
-        
+
         .btn:hover {
             background-color: var(--accent-color);
         }
-        
+
         footer {
             background-color: var(--dark-color);
             color: white;
             padding: 0;
             margin-top: 2rem;
         }
-        
+
         .footer-top {
             background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
             padding: 3rem 0;
             position: relative;
             overflow: hidden;
         }
-        
+
         .footer-top::before {
             content: '';
             position: absolute;
@@ -461,47 +462,47 @@
             opacity: 0.1;
             z-index: 0;
         }
-        
+
         .footer-content {
             position: relative;
             z-index: 1;
         }
-        
+
         .footer-logo {
             max-width: 180px;
             margin-bottom: 1.5rem;
         }
-        
+
         .footer-logo img {
             width: 100%;
             height: auto;
         }
-        
+
         .footer-about p {
             margin-bottom: 1.5rem;
         }
-        
+
         .footer-subscribe {
             margin-bottom: 2rem;
         }
-        
+
         .footer-subscribe h4 {
             margin-bottom: 1rem;
             color: white;
         }
-        
+
         .subscribe-form {
             display: flex;
             max-width: 400px;
         }
-        
+
         .subscribe-form input {
             flex: 1;
             padding: 0.6rem;
             border: none;
             border-radius: 4px 0 0 4px;
         }
-        
+
         .subscribe-form button {
             background-color: var(--accent-color);
             color: white;
@@ -511,26 +512,26 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
-        
+
         .subscribe-form button:hover {
             background-color: #a73b40;
         }
-        
+
         .footer-links h4 {
             color: white;
             margin-bottom: 1.5rem;
             font-weight: 600;
         }
-        
+
         .footer-links ul {
             list-style: none;
             padding: 0;
         }
-        
+
         .footer-links li {
             margin-bottom: 0.75rem;
         }
-        
+
         .footer-links a {
             color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
@@ -538,22 +539,22 @@
             font-size: 0.95rem;
             display: block;
         }
-        
+
         .footer-links a:hover {
             color: var(--secondary-color);
             padding-left: 5px;
         }
-        
+
         .footer-contact-info {
             margin-bottom: 2rem;
         }
-        
+
         .footer-contact-item {
             display: flex;
             align-items: flex-start;
             margin-bottom: 1rem;
         }
-        
+
         .footer-contact-icon {
             width: 36px;
             height: 36px;
@@ -565,17 +566,17 @@
             margin-right: 1rem;
             flex-shrink: 0;
         }
-        
+
         .footer-contact-icon i {
             color: var(--secondary-color);
             font-size: 1rem;
         }
-        
+
         .footer-social {
             display: flex;
             gap: 1rem;
         }
-        
+
         .footer-social a {
             width: 40px;
             height: 40px;
@@ -587,24 +588,71 @@
             color: white;
             transition: all 0.3s;
         }
-        
+
         .footer-social a:hover {
             background-color: var(--secondary-color);
             transform: translateY(-3px);
         }
-        
+
         .footer-bottom {
             background-color: rgba(0, 0, 0, 0.2);
             padding: 1.5rem 0;
             text-align: center;
         }
-        
+
         .footer-bottom p {
             margin: 0;
             font-size: 0.9rem;
             color: rgba(255, 255, 255, 0.7);
         }
-        
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 15px;
+            gap: 15px;
+            background-color: #181717;
+            outline: 3px #181717 solid;
+            outline-offset: -3px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: 400ms;
+        }
+
+        .button .text {
+            color: white;
+            font-weight: 700;
+            font-size: 1em;
+            transition: 400ms;
+        }
+
+        .button svg path {
+            transition: 400ms;
+        }
+
+        .button:hover {
+            background-color: transparent;
+        }
+
+        .button:hover .text {
+            color: #181717;
+        }
+
+        .button:hover svg path {
+            fill: #181717;
+        }
+        .fh{
+            width: 900px;
+            height: 400px;
+            background-color: rgba(249, 248, 248, 0.395);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -616,37 +664,37 @@
                 background-color: var(--dark-color);
                 padding: 1rem 0;
             }
-            
+
             .nav-links.active {
                 display: flex;
             }
-            
+
             .nav-links li {
                 margin: 0.5rem 0;
                 text-align: center;
             }
-            
+
             .hamburger {
                 display: block;
             }
-            
+
             .hero h1 {
                 font-size: 2.5rem;
             }
-            
+
             .hero p {
                 font-size: 1.2rem;
             }
-            
+
             .about,
             .contact-container {
                 grid-template-columns: 1fr;
             }
-            
+
             .footer-top {
                 padding: 2rem 0;
             }
-            
+
             .footer-about,
             .footer-links,
             .footer-contact {
@@ -655,6 +703,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -678,12 +727,14 @@
 
     <!-- Hero Section with Image Carousel -->
     <section class="hero" id="home">
-        <div class="slide active" style="background-image: url('https://w0.peakpx.com/wallpaper/760/67/HD-wallpaper-village-in-mountains-forest-green-mountains-houses-village-nature-trees-lake.jpg');"></div>
+        <div class="slide active" style="background-color: black;"></div>
         <div class="slide" style="background-image: url('/api/placeholder/1200/800');"></div>
         <div class="slide" style="background-image: url('/api/placeholder/1200/800');"></div>
-        <div class="hero-content">
-            <h1>Welcome to Kakkathadam</h1>
+        <div class="hero-content" style="padding-top: 150px;">
+            <div class="fh" style="padding-top: 80px; border-radius: 10px;">
+                <h1>Welcome to Kakkathadam</h1>
             <p>Experience the charm, culture and natural beauty of our village</p>
+            </div>
         </div>
     </section>
 
@@ -693,15 +744,27 @@
         <div class="about">
             <div class="about-text">
                 <h3>HISTORY</h3>
-                <p>Founded in [1965], The name of our village is Kakkathadam. It has been around 60-65 years since this place came into existence. This place was once an empty field, but it was a place full of beautiful trees. Then, over time, it became the Kakkathadam you see today. The locals say that the reason for the name Kakkathadam must have been because crows used to live in all those trees at that time.</p>
+                <p>Founded in [1965], The name of our village is Kakkathadam. It has been around 60-65 years since this
+                    place came into existence. This place was once an empty field, but it was a place full of beautiful
+                    trees. Then, over time, it became the Kakkathadam you see today. The locals say that the reason for
+                    the name Kakkathadam must have been because crows used to live in all those trees at that time.</p>
                 <h3>Population and Culture</h3>
-                <p>Home to approximately [450] residents, our village is known for its [cultural aspects]. The community is diverse, with traditions that have been preserved through generations.The locality Kakkathadam falls in Malappuram district situated in Kerala state, with a population 2211. The male and female populations are 1058 and 1153 respectively. The size of the area is about 0.8 square kilometer.
+                <p>Home to approximately [450] residents, our village is known for its [cultural aspects]. The community
+                    is diverse, with traditions that have been preserved through generations.The locality Kakkathadam
+                    falls in Malappuram district situated in Kerala state, with a population 2211. The male and female
+                    populations are 1058 and 1153 respectively. The size of the area is about 0.8 square kilometer.
                 </p>
-                <p>Kakkathadam is a small Village/hamlet in Tirurangadi Block in Malappuram District of Kerala State, India. It comes under Peruvallur Panchayath. It belongs to North Kerala Division . It is located 19 KM towards west from District head quarters Malappuram. 9 KM from Tirurangadi. 365 KM from State capital Thiruvananthapuram</p>
+                <p>Kakkathadam is a small Village/hamlet in Tirurangadi Block in Malappuram District of Kerala State,
+                    India. It comes under Peruvallur Panchayath. It belongs to North Kerala Division . It is located 19
+                    KM towards west from District head quarters Malappuram. 9 KM from Tirurangadi. 365 KM from State
+                    capital Thiruvananthapuram</p>
             </div>
             <div class="map-container">
                 <!-- Replace with actual map embed -->
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7830.092181879359!2d75.92853663438287!3d11.109942934058248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64e7015958f67%3A0x4fe6684597cabaa2!2skakkathadam%2C%20Peruvallur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1747237329471!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7830.092181879359!2d75.92853663438287!3d11.109942934058248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64e7015958f67%3A0x4fe6684597cabaa2!2skakkathadam%2C%20Peruvallur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1747237329471!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -743,7 +806,8 @@
                 </div>
                 <div class="highlight-info">
                     <h3>Pond</h3>
-                    <p>The [Konnammakkal Swimming Pool] is not only beautiful but also vital to our village's agriculture and daily life.</p>
+                    <p>The [Konnammakkal Swimming Pool] is not only beautiful but also vital to our village's
+                        agriculture and daily life.</p>
                 </div>
             </div>
         </div>
@@ -780,38 +844,45 @@
         <div class="business-container">
             <div class="business-card">
                 <div class="business-img">
-                    <i class="fas fa-store"></i>
+                    <img src="./abbas.jpg" alt="" style="height: 200px; width: 350px;">
                 </div>
                 <div class="business-info">
                     <h3>AP Store</h3>
                     <p><strong>Type:</strong> General Store</p>
                     <p><strong>Owner:</strong> Abbas</p>
                     <p><strong>Contact:</strong> [Phone Number]</p>
-                    <p>AP general store is a type of retail establishment, often found in kakkathadam , that offers a wide variety of goods. The AP stores typically stock a mix of groceries, household items, hardware, without being divided into specific departments. They serve as a one-stop shop for many of a community's basic needs. </p>
+                    <p>AP general store is a type of retail establishment, often found in kakkathadam , that offers a
+                        wide variety of goods. The AP stores typically stock a mix of groceries, household items,
+                        hardware, without being divided into specific departments. They serve as a one-stop shop for
+                        many of a community's basic needs. </p>
                 </div>
             </div>
             <div class="business-card">
                 <div class="business-img">
-                    <i class="fas fa-utensils"></i>
+                    <img src="./raihan.png" alt="" style="height: 200px; width: 350px;">
                 </div>
                 <div class="business-info">
                     <h3>Raidhan Kuzhimandhi</h3>
                     <p><strong>Type:</strong> Restaurant</p>
                     <p><strong>Owner:</strong> saidalavi chokly</p>
                     <p><strong>Contact:</strong> 07947424011</p>
-                    <p>Rabeeh Raidan is a chain of fast food restaurants, particularly known for its "Kuzhimandi" (a type of Arabian rice dish) and other fast food items, with multiple locations in and around Malappuram, Kerala. They are known for their "warm atmosphere and attentive service"</p>
+                    <p>Rabeeh Raidan is a chain of fast food restaurants, particularly known for its "Kuzhimandi" (a
+                        type of Arabian rice dish) and other fast food items, with multiple locations in and around
+                        Malappuram, Kerala. They are known for their "warm atmosphere and attentive service"</p>
                 </div>
             </div>
             <div class="business-card">
                 <div class="business-img">
-                    <i class="fas fa-tractor"></i>
+                    <img src="./raidhan foods.jpg" alt="" style="height: 200px; width: 350px;">
                 </div>
                 <div class="business-info">
                     <h3> Raidhan Foods</h3>
                     <p><strong>Type:</strong> Backery </p>
                     <p><strong>Owner:</strong> Alavi haji</p>
                     <p><strong>Contact:</strong> 09778717385</p>
-                    <p>Raidhan Foods in Malappuram is a multifaceted food business with branches offering a range of services, including bakery products, sweets, and potentially restaurant offerings. They are known for their customer-centric approach, emphasizing quality and positive experiences. </p>
+                    <p>Raidhan Foods in Malappuram is a multifaceted food business with branches offering a range of
+                        services, including bakery products, sweets, and potentially restaurant offerings. They are
+                        known for their customer-centric approach, emphasizing quality and positive experiences. </p>
                 </div>
             </div>
         </div>
@@ -823,29 +894,33 @@
         <div class="people-container">
             <div class="person-card">
                 <div class="person-img">
-                    <img src="./mem.png" alt="" style="height: 200px; width: 200px; border-radius: 50%; background-size: cover;">
+                    <img src="./mem.png" alt=""
+                        style="height: 200px; width: 200px; border-radius: 50%; background-size: cover;">
                 </div>
                 <div class="person-info">
                     <h3>Siadalvi</h3>
                     <p>Ward Membar</p>
-                    <p>Has been serving the village citizens for over 5 years and has shaped many successful careers.</p>
+                    <p>Has been serving the village citizens for over 5 years and has shaped many successful careers.
+                    </p>
                 </div>
             </div>
             <div class="person-card">
                 <div class="person-img">
-                    <img src="./kalam sir.png" alt="" style="height: 200px; width: 200px; border-radius: 50%; background-size: cover;">
+                    <img src="./kalam sir.png" alt=""
+                        style="height: 200px; width: 200px; border-radius: 50%; background-size: cover;">
                 </div>
                 <div class="person-info">
                     <h3>Abdul Kalam Master</h3>
                     <p>Panchayath President</p>
-                    <p>Has been serving the panchayath peoples for over 15 years and has shaped many successful careers.</p>
+                    <p>Has been serving the panchayath peoples for over 15 years and has shaped many successful careers.
+                    </p>
                 </div>
             </div>
-            </div>
-            </section>
+        </div>
+    </section>
 
 
-              <section id="facilities" class="facilities">
+    <section id="facilities" class="facilities">
         <div class="container">
             <h2>Village Facilities</h2>
             <div class="facilities-container">
@@ -863,7 +938,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="facility-card">
                     <div class="facility-icon">
                         <i class="fas fa-medkit"></i>
@@ -872,13 +947,14 @@
                         <h3>Healthcare Facilities</h3>
                         <p>Quality healthcare services accessible to all community members:</p>
                         <ul class="list-unstyled mt-3">
-                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Primary Health Center</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Primary Health Center
+                            </li>
                             <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Community Clinic</li>
                             <li><i class="fas fa-check-circle text-success me-2"></i> Mobile Medical Services</li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="facility-card">
                     <div class="facility-icon">
                         <i class="fas fa-futbol"></i>
@@ -973,15 +1049,22 @@
                         </div>
                         <div class="form-group">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Write your message"></textarea>
+                            <textarea class="form-control" id="message" rows="5"
+                                placeholder="Write your message"></textarea>
                         </div>
-                        <button type="submit" class="btn">Send Message</button>
+                        <button class="button">
+                                <path
+                                    d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
+                                    fill="white"></path>
+                            </svg>
+                            <p class="text" style="margin-left: -15px;">Submit</p>
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-                
-            </body>
-            </html>
-            
+
+</body>
+
+</html>
