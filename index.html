@@ -644,13 +644,23 @@
             fill: #181717;
         }
         .fh{
-            width: 900px;
-            height: 400px;
-            background-color: rgba(249, 248, 248, 0.395);
+            width: 10000px;
+            height: 700px;
+            background-color: rgba(4, 0, 0, 0.568);
             text-align: center;
             display: flex;
             flex-direction: column;
             align-self: center;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: moveup .5s linear forwards;
+        }
+        @keyframes moveup{
+            100%{
+                opacity: 1;
+            transform: translateY(0px);
+
+            }
         }
 
         @media (max-width: 768px) {
@@ -727,11 +737,11 @@
 
     <!-- Hero Section with Image Carousel -->
     <section class="hero" id="home">
-        <div class="slide active" style="background-color: black;"></div>
+        <div class="slide active" style="background-image: url(https://cdn.pixabay.com/photo/2022/02/24/16/34/hut-7032759_640.jpg);background-size: contain;"></div>
         <div class="slide" style="background-image: url('/api/placeholder/1200/800');"></div>
         <div class="slide" style="background-image: url('/api/placeholder/1200/800');"></div>
         <div class="hero-content" style="padding-top: 150px;">
-            <div class="fh" style="padding-top: 80px; border-radius: 10px;">
+            <div class="fh" style="padding-top: 200px; border-radius: 10px;">
                 <h1>Welcome to Kakkathadam</h1>
             <p>Experience the charm, culture and natural beauty of our village</p>
             </div>
@@ -773,7 +783,8 @@
     <section id="highlights" class="highlights">
         <h2>Village Highlights</h2>
         <div class="highlights-container">
-            <div class="highlight-card">
+           <a href="https://maps.app.goo.gl/V2HGRzNThz2YPTpKA" style="text-decoration: none;color: black;">
+             <div class="highlight-card" style="height: 420px;">
                 <div class="highlight-img">
                     <img src="./masjid.jpg" alt="" style="width: 210px; height: 200px;">
                 </div>
@@ -782,7 +793,9 @@
                     <p>Built in [2001], this [Mosque] is a central part of our community's spiritual life.</p>
                 </div>
             </div>
-            <div class="highlight-card">
+           </a>
+           <a href="https://maps.app.goo.gl/3X9d5WWfAy3yEp3aA" style="text-decoration: none;color: black;">
+             <div class="highlight-card" style="height: 420px;">
                 <div class="highlight-img">
                     <img src="./club.jpg" alt="" style="width: 250px; height: 200px;">
                 </div>
@@ -791,7 +804,9 @@
                     <p>The [ oscar club ] is a stunning place that attracts visitors from surrounding areas.</p>
                 </div>
             </div>
-            <div class="highlight-card">
+           </a>
+            <a href="https://maps.app.goo.gl/Uj43ordVEP4yKvtM6" style="text-decoration: none;color: black;">
+                <div class="highlight-card" style="height: 420px;">
                 <div class="highlight-img">
                     <img src="./temple1.png" alt="" style="width: 250px; height: 200px;">
                 </div>
@@ -800,7 +815,9 @@
                     <p>This is Kottekkav Bhagavathi Temple and stands as a reminder of our heritage.</p>
                 </div>
             </div>
-            <div class="highlight-card">
+            </a>
+            <a href="https://maps.app.goo.gl/AkZxtiXS2Wxu3oJJA" style="text-decoration: none;color: black;">
+                <div class="highlight-card" style="height: 420px;">
                 <div class="highlight-img">
                     <img src="./pool.png" alt="" style="width: 250px; height: 200px;">
                 </div>
@@ -810,6 +827,7 @@
                         agriculture and daily life.</p>
                 </div>
             </div>
+            </a>
         </div>
     </section>
 
@@ -842,7 +860,8 @@
     <section id="businesses" class="businesses">
         <h2>Local Businesses & Services</h2>
         <div class="business-container">
-            <div class="business-card">
+            <a href="tel:+919072030988" style="text-decoration: none;color: black;">
+                <div class="business-card" style="height: 580px;">
                 <div class="business-img">
                     <img src="./abbas.jpg" alt="" style="height: 200px; width: 350px;">
                 </div>
@@ -850,14 +869,16 @@
                     <h3>AP Store</h3>
                     <p><strong>Type:</strong> General Store</p>
                     <p><strong>Owner:</strong> Abbas</p>
-                    <p><strong>Contact:</strong> [Phone Number]</p>
+                    <p><strong>Contact:</strong> 9072030988</p>
                     <p>AP general store is a type of retail establishment, often found in kakkathadam , that offers a
                         wide variety of goods. The AP stores typically stock a mix of groceries, household items,
                         hardware, without being divided into specific departments. They serve as a one-stop shop for
                         many of a community's basic needs. </p>
                 </div>
             </div>
-            <div class="business-card">
+            </a>
+           <a href="tel:+917947424011" style="text-decoration: none;color: black;">
+             <div class="business-card" style="height: 580px;">
                 <div class="business-img">
                     <img src="./raihan.png" alt="" style="height: 200px; width: 350px;">
                 </div>
@@ -871,7 +892,9 @@
                         Malappuram, Kerala. They are known for their "warm atmosphere and attentive service"</p>
                 </div>
             </div>
-            <div class="business-card">
+           </a>
+           <a href="tel:+919778717385" style="text-decoration: none;color: black;">
+             <div class="business-card" style="height: 580px;">
                 <div class="business-img">
                     <img src="./raidhan foods.jpg" alt="" style="height: 200px; width: 350px;">
                 </div>
@@ -885,6 +908,7 @@
                         known for their customer-centric approach, emphasizing quality and positive experiences. </p>
                 </div>
             </div>
+           </a>
         </div>
     </section>
 
@@ -892,7 +916,8 @@
     <section id="people" class="people">
         <h2>Notable People</h2>
         <div class="people-container">
-            <div class="person-card">
+           <a href="tel:+918113050171" style="text-decoration: none;color: black;">
+             <div class="person-card">
                 <div class="person-img">
                     <img src="./mem.png" alt=""
                         style="height: 200px; width: 200px; border-radius: 50%; background-size: cover;">
@@ -904,7 +929,9 @@
                     </p>
                 </div>
             </div>
-            <div class="person-card">
+           </a>
+           <a href="tel:+919846210343" style="text-decoration: none;color: black;">
+             <div class="person-card">
                 <div class="person-img">
                     <img src="./kalam sir.png" alt=""
                         style="height: 200px; width: 200px; border-radius: 50%; background-size: cover;">
@@ -916,6 +943,7 @@
                     </p>
                 </div>
             </div>
+           </a>
         </div>
     </section>
 
@@ -924,7 +952,8 @@
         <div class="container">
             <h2>Village Facilities</h2>
             <div class="facilities-container">
-                <div class="facility-card">
+                <a href="https://maps.app.goo.gl/viarrA3aKgrtjn9y9" style="text-decoration: none;color: black;">
+                    <div class="facility-card">
                     <div class="facility-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
@@ -932,14 +961,16 @@
                         <h3>Educational Institutions</h3>
                         <p>Our village has several educational institutions catering to various age groups:</p>
                         <ul class="list-unstyled mt-3">
-                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Primary School</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Secondary School</li>
-                            <li><i class="fas fa-check-circle text-success me-2"></i> Community Library</li>
+                            <li class="mb-2"><i class="fas  text-success me-2"></i> Primary School</li>
+                            <li class="mb-2"><i class="fas  text-success me-2"></i> Secondary School</li>
+                            <li><i class="fas  text-success me-2"></i> Community Library</li>
                         </ul>
                     </div>
                 </div>
+                </a>
 
-                <div class="facility-card">
+               <a href="https://maps.app.goo.gl/itjRu3C3S4BFfdZD6" style="text-decoration: none;color: black;">
+                 <div class="facility-card">
                     <div class="facility-icon">
                         <i class="fas fa-medkit"></i>
                     </div>
@@ -947,15 +978,17 @@
                         <h3>Healthcare Facilities</h3>
                         <p>Quality healthcare services accessible to all community members:</p>
                         <ul class="list-unstyled mt-3">
-                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Primary Health Center
+                            <li class="mb-2"><i class="fas  text-success me-2"></i> Primary Health Center
                             </li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Community Clinic</li>
-                            <li><i class="fas fa-check-circle text-success me-2"></i> Mobile Medical Services</li>
+                            <li class="mb-2"><i class="fas  text-success me-2"></i> Community Clinic</li>
+                            <li><i class="fas  text-success me-2"></i> Mobile Medical Services</li>
                         </ul>
                     </div>
                 </div>
+               </a>
 
-                <div class="facility-card">
+                <a href="https://maps.app.goo.gl/AkSZFdJvhoX14ZoK6" style="text-decoration: none;color: black;">
+                    <div class="facility-card">
                     <div class="facility-icon">
                         <i class="fas fa-futbol"></i>
                     </div>
@@ -963,12 +996,13 @@
                         <h3>Sports & Recreation</h3>
                         <p>Facilities for physical activities and community gatherings:</p>
                         <ul class="list-unstyled mt-3">
-                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Cricket Ground</li>
-                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Community Park</li>
-                            <li><i class="fas fa-check-circle text-success me-2"></i> Indoor Sports Hall</li>
+                            <li class="mb-2"><i class="fas  text-success me-2"></i> Cricket Ground</li>
+                            <li class="mb-2"><i class="fas  text-success me-2"></i> Community Park</li>
+                            <li><i class="fas  text-success me-2"></i> Indoor Sports Hall</li>
                         </ul>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </section>
@@ -1017,16 +1051,16 @@
                     <div class="social-links-contact">
                         <h4>Follow Us</h4>
                         <div class="d-flex gap-3 mt-3">
-                            <a href="#" class="btn btn-outline-primary rounded-circle">
+                            <a href="https://www.facebook.com/pages/Kakkathadam%20-%20%E0%B4%95%E0%B4%BE%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A4%E0%B5%8D%E0%B4%A4%E0%B4%9F%E0%B5%A6/1596469303950338/#" class="btn btn-outline-primary rounded-circle">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="btn btn-outline-info rounded-circle">
+                            <a href="https://x.com/shafikakathadam/status/920552702240743425" class="btn btn-outline-info rounded-circle">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#" class="btn btn-outline-danger rounded-circle">
+                            <a href="https://www.instagram.com/oscar_kakkathadam/" class="btn btn-outline-danger rounded-circle">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" class="btn btn-outline-success rounded-circle">
+                            <a href="tel:+919072030988" class="btn btn-outline-success rounded-circle">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
                         </div>
