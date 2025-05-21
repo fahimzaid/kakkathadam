@@ -68,7 +68,7 @@
         }
 
         .nav-links a:hover {
-            color: var(--secondary-color);
+            color: black;
         }
 
         .hamburger {
@@ -224,7 +224,7 @@
         }
 
         .businesses {
-            background-color: var(--light-color);
+            background-color: black;
         }
 
         .business-container {
@@ -291,7 +291,7 @@
 
         /* Facilities Section Styles */
         .facilities {
-            background-color: var(--light-color);
+            background-color: black;
             text-align: center;
         }
 
@@ -319,7 +319,7 @@
             align-items: center;
             justify-content: center;
             height: 120px;
-            background-color: var(--primary-color);
+            background-color: goldenrod;
             color: white;
             font-size: 3rem;
         }
@@ -645,7 +645,9 @@
         }
 
         .fh {
-            width: 10000px;
+            padding-left: 500px;
+            padding-right: 500px;
+            margin-bottom: 100px;
             height: 700px;
             background-color: rgba(4, 0, 0, 0.568);
             text-align: center;
@@ -660,7 +662,7 @@
         /* From Uiverse.io by nikk7007 */
         .rm {
             --color: #00A97F;
-            --color2: rgb(10, 25, 30);
+            --color2: white;
             padding: 0.8em 1.75em;
             background-color: transparent;
             border-radius: 6px;
@@ -677,8 +679,8 @@
             color: var(--color);
         }
 
-        .btn::after,
-        .btn::before {
+        .rm::after,
+        .rm::before {
             content: '';
             display: block;
             height: 100%;
@@ -692,25 +694,25 @@
             background-color: var(--color);
         }
 
-        .btn::before {
+        .rm::before {
             top: -50%;
             left: -25%;
             transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
         }
 
-        .btn:hover::before {
+        .rm:hover::before {
             transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
         }
 
-        .btn:hover::after {
+        .rm:hover::after {
             transform: skew(45deg) translate(-50%, -50%);
         }
 
-        .btn:hover {
+        .rm:hover {
             color: var(--color2);
         }
 
-        .btn:active {
+        .rm:active {
             filter: brightness(.7);
             transform: scale(.98);
         }
@@ -742,7 +744,7 @@
             margin: 0;
             width: 3rem;
             height: 3rem;
-            background: var(--primary-color);
+            background: wheat;
             border-radius: 1.625rem;
         }
 
@@ -752,7 +754,7 @@
             top: 0;
             bottom: 0;
             margin: auto;
-            background: #fff;
+            background:black;
         }
 
         button.learn-more .circle .icon.arrow {
@@ -770,8 +772,8 @@
             right: 0.0625rem;
             width: 0.625rem;
             height: 0.625rem;
-            border-top: 0.125rem solid #fff;
-            border-right: 0.125rem solid #fff;
+            border-top: 0.125rem solid black;
+            border-right: 0.125rem solid black;
             transform: rotate(45deg);
         }
 
@@ -796,12 +798,12 @@
         }
 
         button:hover .circle .icon.arrow {
-            background: #fff;
+            background: black;
             transform: translate(1rem, 0);
         }
 
         button:hover .button-text {
-            color: #fff;
+            color: black;
         }
 
         @keyframes moveup {
@@ -863,11 +865,11 @@
     </style>
 </head>
 
-<body>
-    <header>
+<body style="background-color: black;">
+    <header style="background-color: goldenrod;">
         <nav>
-            <div class="logo " style="font-family: 'Courier New', Courier, monospace;">Kakkathadam</div>
-            <ul class="nav-links">
+            <div class="logo " style="color: black; font-family: 'Courier New', Courier, monospace;">Kakkathadam</div>
+            <ul class="nav-links" style=>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#highlights">Highlights</a></li>
@@ -910,21 +912,21 @@
 
     <!-- About the Village -->
     <section id="about">
-        <h2>About Our Village</h2>
-        <div class="about">
+        <h2 style="color: wheat;">About Our Village</h2>
+        <div class="about" style="gap: 100px;">
             <div class="about-text">
-                <h3>HISTORY</h3>
-                <p>Founded in [1965], The name of our village is Kakkathadam. It has been around 60-65 years since this
+                <h3 style="color: white;">HISTORY</h3>
+                <p style="color: gray;">Founded in [1965], The name of our village is Kakkathadam. It has been around 60-65 years since this
                     place came into existence. This place was once an empty field, but it was a place full of beautiful
                     trees. Then, over time, it became the Kakkathadam you see today. The locals say that the reason for
                     the name Kakkathadam must have been because crows used to live in all those trees at that time.</p>
-                <h3>Population and Culture</h3>
-                <p>Home to approximately [450] residents, our village is known for its [cultural aspects]. The community
+                <h3 style="color: white;">Population and Culture</h3>
+                <p style="color: gray;">Home to approximately [450] residents, our village is known for its [cultural aspects]. The community
                     is diverse, with traditions that have been preserved through generations.The locality Kakkathadam
                     falls in Malappuram district situated in Kerala state, with a population 2211. The male and female
                     populations are 1058 and 1153 respectively. The size of the area is about 0.8 square kilometer.
                 </p>
-                <p>Kakkathadam is a small Village/hamlet in Tirurangadi Block in Malappuram District of Kerala State,
+                <p style="color: gray;">Kakkathadam is a small Village/hamlet in Tirurangadi Block in Malappuram District of Kerala State,
                     India. It comes under Peruvallur Panchayath. It belongs to North Kerala Division . It is located 19
                     KM towards west from District head quarters Malappuram. 9 KM from Tirurangadi. 365 KM from State
                     capital Thiruvananthapuram</p>
@@ -941,49 +943,49 @@
 
     <!-- Village Highlights -->
     <section id="highlights" class="highlights">
-        <h2>Village Highlights</h2>
+        <h2 style="color: wheat;">Village Highlights</h2>
         <div class="highlights-container">
             <a href="https://maps.app.goo.gl/V2HGRzNThz2YPTpKA" style="text-decoration: none;color: black;">
-                <div class="highlight-card" style="height: 420px;">
+                <div class="highlight-card" style="background-color: grey; height: 420px;">
                     <div class="highlight-img">
-                        <img src="./masjid.jpg" alt="" style="width: 210px; height: 200px;">
+                        <img src="./masjid.jpg" alt="" style="width: 260px; height: 250px;">
                     </div>
-                    <div class="highlight-info">
-                        <h3>Mosque</h3>
-                        <p>Built in [2001], this [Mosque] is a central part of our community's spiritual life.</p>
+                    <div class="highlight-info" style="margin-top: 30px;">
+                        <h3 style="color: black;">Mosque</h3>
+                        <p style="color: white;">Built in [2001], this [Mosque] is a central part of our community's spiritual life.</p>
                     </div>
                 </div>
             </a>
             <a href="https://maps.app.goo.gl/3X9d5WWfAy3yEp3aA" style="text-decoration: none;color: black;">
-                <div class="highlight-card" style="height: 420px;">
+                <div class="highlight-card" style="height: 420px;background-color: grey;">
                     <div class="highlight-img">
-                        <img src="./club.jpg" alt="" style="width: 250px; height: 200px;">
+                        <img src="./club.jpg" alt="" style="width: 260px; height: 250px;">
                     </div>
-                    <div class="highlight-info">
-                        <h3>Oscar club</h3>
-                        <p>The [ oscar club ] is a stunning place that attracts visitors from surrounding areas.</p>
+                    <div class="highlight-info" style="margin-top: 30px;">
+                        <h3 style="color: black;">Oscar club</h3>
+                        <p style="color: white;">The [ oscar club ] is a stunning place that attracts visitors from surrounding areas.</p>
                     </div>
                 </div>
             </a>
             <a href="https://maps.app.goo.gl/Uj43ordVEP4yKvtM6" style="text-decoration: none;color: black;">
-                <div class="highlight-card" style="height: 420px;">
+                <div class="highlight-card" style="height: 420px;background-color: gray;">
                     <div class="highlight-img">
-                        <img src="./temple1.png" alt="" style="width: 250px; height: 200px;">
+                        <img src="./temple1.png" alt="" style="width: 260px; height: 250px;">
                     </div>
-                    <div class="highlight-info">
-                        <h3>Temple</h3>
-                        <p>This is Kottekkav Bhagavathi Temple and stands as a reminder of our heritage.</p>
+                    <div class="highlight-info" style="margin-top: 30px;">
+                        <h3 style="color: black;">Temple</h3>
+                        <p style="color: white;">This is Kottekkav Bhagavathi Temple and stands as a reminder of our heritage.</p>
                     </div>
                 </div>
             </a>
             <a href="https://maps.app.goo.gl/AkZxtiXS2Wxu3oJJA" style="text-decoration: none;color: black;">
-                <div class="highlight-card" style="height: 420px;">
+                <div class="highlight-card" style="height: 420px;background-color: gray;">
                     <div class="highlight-img">
-                        <img src="./pool.png" alt="" style="width: 250px; height: 200px;">
+                        <img src="./pool.png" alt="" style="width: 260px; height: 250px;">
                     </div>
-                    <div class="highlight-info">
-                        <h3>Pond</h3>
-                        <p>The [Konnammakkal Swimming Pool] is not only beautiful but also vital to our village's
+                    <div class="highlight-info" style="margin-top: 30px;">
+                        <h3 style="color: black;">Pond</h3>
+                        <p style="color: white;">The [Konnammakkal Swimming Pool] is not only beautiful but also vital to our village's
                             agriculture and daily life.</p>
                     </div>
                 </div>
@@ -993,7 +995,7 @@
 
     <!-- Photo & Video Gallery -->
     <section id="gallery" class="gallery">
-        <h2>Gallery</h2>
+        <h2 style="color: wheat;">Gallery</h2>
         <div class="gallery-container">
             <div class="gallery-item">
                 <img src="./iftar.png" alt="Village Festival">
@@ -1016,14 +1018,14 @@
         </div>
         <div>
             <!-- From Uiverse.io by cssbuttons-io -->
-           <a href="https://www.instagram.com/oscar_kakkathadam/">
-             <button class="learn-more" style="margin-top: 50px;">
-                <span class="circle" aria-hidden="true">
-                    <span class="icon arrow"></span>
-                </span>
-                <span class="button-text">More...</span>
-            </button>
-           </a>
+            <a href="https://www.instagram.com/oscar_kakkathadam/">
+                <button class="learn-more" style="margin-top: 50px;">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">More...</span>
+                </button>
+            </a>
         </div>
     </section>
 
@@ -1032,52 +1034,50 @@
         <h2>Local Businesses & Services</h2>
         <div class="business-container">
             <a href="tel:+919072030988" style="text-decoration: none;color: black;">
-                <div class="business-card" style="height: 580px;">
+                <div class="business-card" style="height: 500px;background-color: gray;">
                     <div class="business-img">
-                        <img src="./abbas.jpg" alt="" style="height: 200px; width: 350px;">
+                        <img src="./abbas.jpg" alt="" style="height: 200px; width: 360px;">
                     </div>
                     <div class="business-info">
                         <h3>AP Store</h3>
-                        <p><strong>Type:</strong> General Store</p>
-                        <p><strong>Owner:</strong> Abbas</p>
-                        <p><strong>Contact:</strong> 9072030988</p>
-                        <p>AP general store is a type of retail establishment, often found in kakkathadam , that offers
+                        <p style="color: white;"><strong style="color: black;">Type:</strong> General Store</p>
+                        <p style="color: white;"><strong style="color: black;">Owner:</strong> Abbas</p>
+                        <p style="color: white;"><strong style="color: black;">Contact:</strong> 9072030988</p>
+                        <p style="color: white;">AP general store is a type of retail establishment, often found in kakkathadam , that offers
                             a
                             wide variety of goods. The AP stores typically stock a mix of groceries, household items,
-                            hardware, without being divided into specific departments. They serve as a one-stop shop for
-                            many of a community's basic needs. </p>
+                            hardware, without being divided into specific departments. </p>
                     </div>
                 </div>
             </a>
             <a href="tel:+917947424011" style="text-decoration: none;color: black;">
-                <div class="business-card" style="height: 580px;">
+                <div class="business-card" style="height: 500px;background-color: gray;">
                     <div class="business-img">
-                        <img src="./raihan.png" alt="" style="height: 200px; width: 350px;">
+                        <img src="./raihan.png" alt="" style="height: 200px; width: 360px;">
                     </div>
                     <div class="business-info">
                         <h3>Raidhan Kuzhimandhi</h3>
-                        <p><strong>Type:</strong> Restaurant</p>
-                        <p><strong>Owner:</strong> saidalavi chokly</p>
-                        <p><strong>Contact:</strong> 07947424011</p>
-                        <p>Rabeeh Raidan is a chain of fast food restaurants, particularly known for its "Kuzhimandi" (a
+                        <p style="color: white;"><strong style="color: black;">Type:</strong> Restaurant</p>
+                        <p style="color: white;"><strong style="color: black;">Owner:</strong> saidalavi chokly</p>
+                        <p style="color: white;"><strong style="color: black;">Contact:</strong> 07947424011</p>
+                        <p style="color: white;">Rabeeh Raidan is a chain of fast food restaurants, particularly known for its "Kuzhimandi" (a
                             type of Arabian rice dish) and other fast food items, with multiple locations in and around
-                            Malappuram, Kerala. They are known for their "warm atmosphere and attentive service"</p>
+                            Malappuram, Kerala."</p>
                     </div>
                 </div>
             </a>
             <a href="tel:+919778717385" style="text-decoration: none;color: black;">
-                <div class="business-card" style="height: 580px;">
+                <div class="business-card" style="height: 500px;background-color: gray;border-radius: 10px 10px 10px grey;">
                     <div class="business-img">
-                        <img src="./raidhan foods.jpg" alt="" style="height: 200px; width: 350px;">
+                        <img src="./raidhan foods.jpg" alt="" style="height: 200px; width: 360px;">
                     </div>
                     <div class="business-info">
                         <h3> Raidhan Foods</h3>
-                        <p><strong>Type:</strong> Backery </p>
-                        <p><strong>Owner:</strong> Alavi haji</p>
-                        <p><strong>Contact:</strong> 09778717385</p>
-                        <p>Raidhan Foods in Malappuram is a multifaceted food business with branches offering a range of
-                            services, including bakery products, sweets, and potentially restaurant offerings. They are
-                            known for their customer-centric approach, emphasizing quality and positive experiences.
+                        <p style="color: white;"><strong style="color: black;">Type:</strong> Backery </p>
+                        <p style="color: white;"><strong style="color: black;">Owner:</strong> Alavi haji</p>
+                        <p style="color: white;"><strong style="color: black;">Contact:</strong> 09778717385</p>
+                        <p style="color: white;">Raidhan Foods in Malappuram is a multifaceted food business with branches offering a range of
+                            services, including bakery products, sweets, and potentially restaurant offerings.
                         </p>
                     </div>
                 </div>
@@ -1087,33 +1087,33 @@
 
     <!-- Notable People -->
     <section id="people" class="people">
-        <h2>Notable People</h2>
+        <h2 style="color: wheat;">Notable People</h2>
         <div class="people-container">
             <a href="tel:+918113050171" style="text-decoration: none;color: black;">
-                <div class="person-card">
+                <div class="person-card" style="background-color: gray;">
                     <div class="person-img">
                         <img src="./mem.png" alt=""
                             style="height: 200px; width: 200px; border-radius: 50%; background-size: cover;">
                     </div>
                     <div class="person-info">
                         <h3>Siadalvi</h3>
-                        <p>Ward Membar</p>
-                        <p>Has been serving the village citizens for over 5 years and has shaped many successful
+                        <p style="color: white;">Ward Membar</p>
+                        <p style="color: white;">Has been serving the village citizens for over 5 years and has shaped many successful
                             careers.
                         </p>
                     </div>
                 </div>
             </a>
             <a href="tel:+919846210343" style="text-decoration: none;color: black;">
-                <div class="person-card">
+                <div class="person-card" style="background-color: gray;">
                     <div class="person-img">
                         <img src="./kalam sir.png" alt=""
                             style="height: 200px; width: 200px; border-radius: 50%; background-size: cover;">
                     </div>
                     <div class="person-info">
                         <h3>Abdul Kalam Master</h3>
-                        <p>Panchayath President</p>
-                        <p>Has been serving the panchayath peoples for over 15 years and has shaped many successful
+                        <p style="color: white;">Panchayath President</p>
+                        <p style="color: white;">Has been serving the panchayath peoples for over 15 years and has shaped many successful
                             careers.
                         </p>
                     </div>
@@ -1125,7 +1125,7 @@
 
     <section id="facilities" class="facilities">
         <div class="container">
-            <h2>Village Facilities</h2>
+            <h2 style="color: wheat;">Village Facilities</h2>
             <div class="facilities-container">
                 <a href="https://maps.app.goo.gl/viarrA3aKgrtjn9y9" style="text-decoration: none;color: black;">
                     <div class="facility-card">
@@ -1133,7 +1133,7 @@
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                         <div class="facility-info">
-                            <h3>Educational Institutions</h3>
+                            <h3 style="color: black;">Educational Institutions</h3>
                             <p>Our village has several educational institutions catering to various age groups:</p>
                             <ul class="list-unstyled mt-3">
                                 <li class="mb-2"><i class="fas  text-success me-2"></i> Primary School</li>
@@ -1150,7 +1150,7 @@
                             <i class="fas fa-medkit"></i>
                         </div>
                         <div class="facility-info">
-                            <h3>Healthcare Facilities</h3>
+                            <h3 style="color: black;">Healthcare Facilities</h3>
                             <p>Quality healthcare services accessible to all community members:</p>
                             <ul class="list-unstyled mt-3">
                                 <li class="mb-2"><i class="fas  text-success me-2"></i> Primary Health Center
@@ -1168,7 +1168,7 @@
                             <i class="fas fa-futbol"></i>
                         </div>
                         <div class="facility-info">
-                            <h3>Sports & Recreation</h3>
+                            <h3 style="color: black;">Sports & Recreation</h3>
                             <p>Facilities for physical activities and community gatherings:</p>
                             <ul class="list-unstyled mt-3">
                                 <li class="mb-2"><i class="fas  text-success me-2"></i> Cricket Ground</li>
@@ -1226,21 +1226,22 @@
                     <div class="social-links-contact">
                         <h4>Follow Us</h4>
                         <div class="d-flex gap-3 mt-3">
-                            <a href="https://www.facebook.com/pages/Kakkathadam%20-%20%E0%B4%95%E0%B4%BE%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B4%A4%E0%B5%8D%E0%B4%A4%E0%B4%9F%E0%B5%A6/1596469303950338/#"
-                                class="btn btn-outline-primary rounded-circle">
+                            <div class="btn btn-outline-primary rounded-circle">
                                 <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://x.com/shafikakathadam/status/920552702240743425"
-                                class="btn btn-outline-info rounded-circle">
+                            </div>
+                            <div class="btn btn-outline-info rounded-circle">
                                 <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://www.instagram.com/oscar_kakkathadam/"
-                                class="btn btn-outline-danger rounded-circle">
+                            </div>
+
+                            <div class="btn btn-outline-danger rounded-circle">
                                 <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="tel:+919072030988" class="btn btn-outline-success rounded-circle">
+                            </div>
+
+
+                            <div class="btn btn-outline-success rounded-circle">
                                 <i class="fab fa-whatsapp"></i>
-                            </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -1276,6 +1277,8 @@
             </div>
         </div>
     </section>
+
+    
 
 </body>
 
