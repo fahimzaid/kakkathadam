@@ -895,6 +895,45 @@
                 font-size: 0.85rem;
             }
         }
+         .site-footer {
+        background-color: #000000;
+        color: goldenrod;
+        padding: 30px 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-links {
+        margin-top: 15px;
+    }
+    
+    .footer-links a {
+        color: goldenrod;
+        text-decoration: none;
+        margin: 0 15px;
+        transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+        color: #daa520; /* Slightly lighter goldenrod for hover effect */
+        text-decoration: underline;
+    }
+    
+    .copyright {
+        margin-top: 20px;
+        font-size: 14px;
+    }
 
         @media (max-width: 768px) {
             .nav-links {
@@ -960,7 +999,6 @@
                 <li><a href="#businesses">Businesses</a></li>
                 <li><a href="#people">People</a></li>
                 <li><a href="#facilities">Facilities</a></li>
-                <li><a href="#tourist-guide">Tourist Guide</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="hamburger">
@@ -1387,9 +1425,26 @@
         </div>
     </section>
 
-    <footer style="background-color: black; padding: 20px; text-align: center;">
-  <p>&copy; 2025 kakkathadam. All rights reserved.</p>
-  <nav>
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-links" style="display: flex;">
+                <a href="#home">Home</a>
+                <a href="#contact">Contact Us</a>
+                <a href="##highlights">Highlights</a>
+                <a href="#Gallary">Gallary</a>
+                <a href="Businesses">Businesses</a>
+                <a href="#People">People</a>
+                <a href="#Facilities">Facilities</a>
+
+
+            </div>
+            <div class="copyright">
+                &copy; 2025 kakkathadam . All rights reserved.
+            </div>
+        </div>
+    </div>
+</footer>
    
 </footer>
 
